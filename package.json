@@ -1,0 +1,19 @@
+{
+  "name": "mmortara",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel serve index.html",
+    "dev": "parcel watch index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "ga-lite": "^2.0.5",
+    "twemoji": "^13.0.0"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.26.5"
+  }
+}

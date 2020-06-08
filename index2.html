@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        #EstoPuedeSerUnLink{
+            text-decoration:none;
+            color:#000000;
+            
+        }
+        #EstoPuedeSerUnLink:hover {color:#28c079;}
+    </style>
+</head>
+
+
+<body>
+    <h1>Hello Plunker!</h1>
+    <ul>
+        <li>
+            <span aria-hidden="true" class="bullet emoji"></span>
+            <a id="EstoPuedeSerUnLink" href="">JavaScript</a>
+        </li>
+        <br />
+        <p></p>
+        <br />
+        <p>Quieres ver algunos ejemplos de mi trabajo?</p>
+        <input id="Yes_you_me_some_code" type="button" value="clickme" onclick="putLinks();" />
+    </ul>
+</body>
+
+<script>
+
+    if (el.addEventListener) el.addEventListener('click', putLinks, false);
+    else if (el.attachEvent) el.attachEvent('onclick', putLinks);
+
+
+    var el = document.getElementById('Yes_you_me_some_code');
+    console.log(`esto es el elemento ${el}`)
+
+    function doFunction() {
+        alert('hello!');
+    };
+
+    function putLinks() {
+        //var mydiv = document.getElementById("EstoPuedeSerUnLink");
+        document.getElementById("EstoPuedeSerUnLink").href = "https://github.com/AxiomaAbsurdo";
+        //var aTag = document.createElement('a');
+        //aTag.setAttribute('href', "https://github.com/AxiomaAbsurdo");
+        //aTag.innerText = "Show code example";
+        //mydiv.appendChild(aTag);
+    }
+
+
+    //- Using a function pointer:
+    document.getElementById('Yes_you_me_some_code').onclick = putLinks();
+    //- Using an anonymous function:
+    // document.getElementById('Yes_you_me_some_code').onclick = doFunction();
+
+
+
+</script>
+
+</html>
