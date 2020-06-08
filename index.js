@@ -177,3 +177,5 @@ if (!isLocal && "serviceWorker" in navigator) {
     );
   });
 }
+
+console.log('a');
